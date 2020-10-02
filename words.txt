@@ -22,3 +22,8 @@ computer to do tasks on our behalf that were reptitive
 Interestingly, the kinds of things computers can do best
 are often the kinds of things that we humans find boring
 and mind-numbing
+
+New Revision: 39772
+New Revision: 98745
+New Revision: 13612
+New Revision: 34211
