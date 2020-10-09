@@ -17,21 +17,25 @@
 # Don't worry about needing to handle division by zero errors.
 # See the Resources tab for some helpful tutorials on Python classes. - https://edabit.com/challenge/ta8GBizBNbRGo5iC6
 
-class calculator:
+class Calculator:
+    @staticmethod
     def add(x,y):
         return x+y
+    @staticmethod
     def subtract(x,y):
         return x-y
+    @staticmethod
     def multiply(x,y):
         return x*y
+    @staticmethod
     def divide(x,y):
         return x/y
 
-x=10
+x=50
 y=5
 print("x =",x,"y =",y)
 print()
-print("x + y =",calculator.add(x,y))
-print("x - y =",calculator.subtract(x,y))
-print("x * y =",calculator.multiply(x,y))
-print("x / y =",calculator.divide(x,y))
+print("x + y =",Calculator.add(x,y))
+print("x - y =",Calculator.subtract(x,y))
+print("x * y =",Calculator.multiply(x,y))
+print("x / y =",Calculator.divide(x,y))
