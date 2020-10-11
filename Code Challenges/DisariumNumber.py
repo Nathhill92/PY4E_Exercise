@@ -13,13 +13,13 @@
 
 def is_disarium(num):
     print("Testing number:",num)
-    newnum = str(num)
     total = 0
-    for x in range(len(newnum)):
-        total += int(newnum[x])**(x+1)
-
+    #Read about the enumerate function, which made this section much more simple to write
+    for x,y in enumerate(str(num)):
+        total += int(y)**(x+1)
     print("Disarium total:",total)
     print((total == num))
+
 
 is_disarium(75)
 is_disarium(135)
