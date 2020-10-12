@@ -2,8 +2,8 @@ import random
 
 def bubble(listtosort):
     #list length is 1 fewer than the max for two reasons
-    #   1: Avoid "out of index" errors
-    #   2: Bubble sort moves the largest value to the right most position on each pass  
+    #   1: Avoid "out of index" error on last element
+    #   2: Bubble sort moves the largest value to the right most position on each pass, meaning those values don't need to be considered in future passes  
     listlength = len(listtosort)-1
     sorted = False
     #missed this While in my original loop. This is possible with nested For loops, but this While seems easier.

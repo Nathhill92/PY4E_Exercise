@@ -22,11 +22,14 @@
 #  [0, -] -> [0]
 
 def who_goes_free(prisoners, step):
-    #Create list form number of prisoners
-    plist = []
+    #Create prisoner list
     startpos = step-1
-    for x in range(prisoners):
-        plist.append(str(x))
+    # plist = []
+    # for x in range(prisoners):
+    #     plist.append(str(x))
+    
+    #simplify with list comprehension
+    plist = [str(x) for x in range(prisoners)]
     
     #loop for prisoner logic
     finished = False
