@@ -9,19 +9,24 @@
 import random
 
 def setify(list):
-    outlist = []
-    for x in list:
-        if x not in outlist:
-            outlist.append(x)
-    #
-    #This does not work because the the ".sort()" function of the list object returns "None"
-    #outlist would be equal to "None"
-    #outlist = outlist.sort()
-    #
-    #use the function in place
-    outlist.sort()
-
-    return outlist
+    # /
+    #Revisited this one
+    #There is a "set" data type in Python that will return a list of ordered, unique items
+     return set(list)
+    
+    # outlist = []
+    # for x in list:
+    #     if x not in outlist:
+    #         outlist.append(x)
+    # #
+    # #This does not work because the the ".sort()" function of the list object returns "None"
+    # #outlist would be equal to "None"
+    # #outlist = outlist.sort()
+    # #
+    # #use the function in place
+    # outlist.sort()
+   
+    #return outlist
 
 randomlist = []
 for i in range(10):
