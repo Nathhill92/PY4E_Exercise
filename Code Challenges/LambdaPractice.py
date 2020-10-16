@@ -52,3 +52,10 @@ evens = list(filter(lambda x: x%2 == 0, int_list))
 odds = list(filter(lambda x: x%2 != 0, int_list))
 print(evens)
 print(odds)
+
+# Write a Python program to square and cube every number in a given list of integers using Lambda
+int_list = [x for x in range(1,11)]
+square_list = list(map(lambda x: x**2, int_list))
+print(square_list)
+cube_list = list(map(lambda x: x**3, int_list))
+print(cube_list)
