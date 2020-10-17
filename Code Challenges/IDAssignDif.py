@@ -18,3 +18,5 @@ print(solution(0))
 print(solution(8500))
 print(solution(3))
 print(solution(10000))
+
+print(prime_str)
