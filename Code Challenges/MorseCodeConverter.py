@@ -17,12 +17,9 @@ char_to_dots = {
   '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
 }
 
-
+#replace with list comprehension
 def encode_morse(pass_str):
-    return_str = ""
-    for letter in pass_str.upper():
-        return_str += char_to_dots[letter] + " "
-    
+    return_str = ''.join([char_to_dots[x]+" " for x in pass_str.upper()])
     return return_str
 
 print("Hello there friend! ->",encode_morse("Hello there friend!"))
