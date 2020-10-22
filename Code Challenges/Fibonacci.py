@@ -25,8 +25,17 @@ def fibonacci_sequence():
 def fast_fib(x):
     print(fib_seq[x])
 
+#second method found online
+from math import sqrt
+def faster_fib(n):
+   print(int(((1+sqrt(5))**n-(1-sqrt(5))**n)/(2**n*sqrt(5))))
+
 fib_seq = fibonacci_sequence()
 fast_fib(5)
+faster_fib(5)
 fast_fib(10)
+faster_fib(10)
 fast_fib(20)
+faster_fib(20)
 fast_fib(50)
+faster_fib(50)
