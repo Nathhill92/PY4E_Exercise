@@ -9,6 +9,7 @@
 # If there is no majority element, return None.
 # If the list is empty, return None.
 from collections import Counter
+import random, string
 
 def majority_vote(votes):
     # Create Count dictionary with counts of unique values
@@ -25,3 +26,9 @@ def majority_vote(votes):
 majority_vote(["A", "A", "B"])
 majority_vote(["A", "A", "A", "B", "C", "A"])
 majority_vote(["A", "B", "B", "A", "C", "C"])
+
+#Make some random lists 4 fun
+#A list of uppercase letters A-Z
+letterlist = string.ascii_uppercase
+#Run randomized list through majority_vote
+majority_vote(random.choices(letterlist, k = random.randrange(1,10)))
